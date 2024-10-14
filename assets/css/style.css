@@ -1,0 +1,94 @@
+/* Home-Page */
+
+.home main {
+  background-color: var(--secondry-color);
+}
+.home main .top .stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+  align-items: center;
+  flex: 1;
+  border: 2px solid var(--main-color);
+  border-bottom: 0;
+  border-left: 0;
+}
+.home main .top .mid {
+  flex: 3;
+  border: 2px solid var(--main-color);
+  border-bottom: 0;
+}
+
+.home main .top .blank {
+  width: 178px;
+  border-left: 2px solid var(--main-color);
+}
+.home main .top .stars,
+.home main .top .mid,
+.home main .top .blank {
+  padding: 2% 4%;
+}
+.home main .top .mid h2 {
+  font-family: Garamond;
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 85.5px;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.home main .top .stars img.sm {
+  align-self: self-end;
+  margin-left: 12%;
+}
+
+.home main .bottom .img-container {
+  flex: 3;
+  border: 2px solid var(--main-color);
+  border-right: 0;
+  position: relative;
+  background-color: #ebd5c8;
+}
+
+.home main .bottom .img-container img {
+  position: absolute;
+  top: -32%;
+  left: 22%;
+  height: 132%;
+}
+
+.home main .bottom .info {
+  flex: 2;
+  padding: 8% 3%;
+  border: 2px solid var(--main-color);
+  border-right: 0;
+  border-left: 0;
+  position: relative;
+}
+
+.home main .bottom .info::after {
+  content: url(../imgs/playButton.svg);
+  position: absolute;
+  top: -24%;
+  left: 12%;
+}
+
+.home main .bottom .info p {
+  font-family: Garamond;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40.5px;
+  text-align: right;
+  margin-top: 85px;
+  position: relative;
+}
+
+.home main .bottom .info p::after {
+  content: url(../imgs/quote.svg);
+  position: absolute;
+  top: -40px;
+  left: 12%;
+}
+
+/* Home-Page */
