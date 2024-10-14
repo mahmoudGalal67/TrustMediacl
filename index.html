@@ -20,13 +20,17 @@
     ></script>
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swipper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>Trust</title>
   </head>
   <body>
-    <div class="navbar-container"></div>
-
-    <div class="home">
-      <main>
+    <div class="home d-flex">
+      <main class="flex-fill d-flex flex-column">
+        <div class="navbar-container"></div>
         <div class="top d-flex">
           <div class="stars">
             <img src="./assets/imgs/bigStar.svg" alt="" />
@@ -37,8 +41,8 @@
           </div>
           <div class="blank"></div>
         </div>
-        <div class="bottom">
-          <div class="wrapper d-flex">
+        <div class="bottom flex-fill">
+          <div class="wrapper d-flex h-100">
             <div class="img-container">
               <img class="w-100" src="./assets/imgs/main.png" alt="" />
             </div>
@@ -52,7 +56,36 @@
           </div>
         </div>
       </main>
+      <div class="socials d-flex flex-column gap-4 px-3 py-5">
+        <img class="arrow" src="./assets/imgs/upArrow.svg" alt="" />
+        <img class="social-link" src="./assets/imgs/insta.svg" alt="" />
+        <img class="social-link" src="./assets/imgs/face.svg" alt="" />
+        <img class="social-link" src="./assets/imgs/tweet.svg" alt="" />
+        <img class="arrow" src="./assets/imgs/downArrow.svg" alt="" />
+      </div>
     </div>
+
+    <!-- Brands -->
+
+    <div class="brands">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+          <div class="swiper-slide">Elevate <span> Confidence</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- Brands -->
 
     <!-- Bootstrab -->
     <script
@@ -66,6 +99,32 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <!-- Swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          680: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          968: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1724: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
     </script>
   </body>
 </html>

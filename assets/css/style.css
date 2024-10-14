@@ -43,10 +43,14 @@
   margin-left: 12%;
 }
 
+.home main .bottom {
+  flex: 1;
+}
 .home main .bottom .img-container {
   flex: 3;
   border: 2px solid var(--main-color);
   border-right: 0;
+  border-bottom: 0;
   position: relative;
   background-color: #ebd5c8;
 }
@@ -61,9 +65,8 @@
 .home main .bottom .info {
   flex: 2;
   padding: 8% 3%;
-  border: 2px solid var(--main-color);
-  border-right: 0;
-  border-left: 0;
+  border-top: 2px solid var(--main-color);
+  border-left: 2px solid var(--main-color);
   position: relative;
 }
 
@@ -71,7 +74,7 @@
   content: url(../imgs/playButton.svg);
   position: absolute;
   top: -24%;
-  left: 12%;
+  left: 8%;
 }
 
 .home main .bottom .info p {
@@ -88,7 +91,79 @@
   content: url(../imgs/quote.svg);
   position: absolute;
   top: -40px;
-  left: 12%;
+  left: 2%;
 }
+
+.home .socials .arrow {
+  height: 360px;
+}
+
+@media (max-width: 1200px) {
+  .home main .top .blank,
+  .home main .top .stars,
+  .home main .bottom .info::after {
+    display: none;
+  }
+  .home main .top,
+  .home main .bottom .wrapper,
+  .home {
+    flex-direction: column;
+  }
+  .home main .bottom .img-container {
+    height: 400px;
+    flex: auto;
+  }
+  .home .socials {
+    display: none !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .home main .top .mid h2 {
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 35px;
+  }
+  .home main .bottom .img-container {
+    height: 280px;
+  }
+
+  .home main .bottom .img-container img {
+    left: 18%;
+  }
+}
+
+/* BrandSection */
+
+.brands {
+  padding: 1%;
+  border-top: 2px solid #343a32;
+  border-left: 0;
+  border-right: 0;
+  background-color: #f6f1eb;
+}
+.brands .swiper-slide {
+  font-family: Garamond;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #343a32;
+}
+.brands .swiper-slide span {
+  color: #936e4e;
+}
+
+@media (max-width: 1400px) {
+  .brands .swiper-slide {
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .brands .swiper-slide {
+    font-size: 18px;
+  }
+}
+
+/* BrandSection */
 
 /* Home-Page */
