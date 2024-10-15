@@ -166,4 +166,127 @@
 
 /* BrandSection */
 
+/* Special-services-section */
+.sp-services {
+  background-color: #f6f1eb;
+  padding: 4%;
+  padding-right: 0;
+}
+.sp-services .swiper-wrapper {
+  padding-bottom: 40px;
+}
+.sp-services h3 {
+  font-family: Garamond;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.sp-services p {
+  padding-inline: 4%;
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.sp-services .swiper-slide .item {
+  border: 2px solid #343a32;
+  margin: 25px 0;
+  border-radius: 16px;
+  height: 400px;
+  position: relative;
+  background-color: white;
+}
+.sp-services .swiper-slide .item > .main-img {
+  border-radius: 14px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+  height: 300px;
+}
+.sp-services .swiper-slide .item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  border-radius: 16px;
+  background-color: #343a32;
+  bottom: -12px;
+  left: 0;
+  z-index: -1;
+}
+.sp-services .swiper-slide .item span {
+  font-family: Garamond;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 80% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+@media (max-width: 500px) {
+  .sp-services .swiper-slide .item {
+    height: 340px;
+  }
+  .sp-services .swiper-slide .item > .main-img {
+    height: 260px;
+  }
+}
+
+/* Special-services-section */
+/* Booking-section */
+section.booking {
+  border-top: 2px solid #343a32;
+}
+
+form select {
+  padding: 12px 65px;
+  outline: none;
+  padding-right: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+
+  color: #212529;
+}
+/* Booking-section */
+
+/* client-section */
+
+.testi {
+  border-top: 2px solid #343a32;
+  background-color: #ebd5c8;
+}
+.testi .swiper-wrapper {
+  padding: 85px 0;
+}
+
+.swiper-slide .client {
+  padding: 12px 48px;
+  border: 2px solid #343a32;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.swiper-slide .client .desc {
+  width: 100%;
+}
+.swiper-slide .client .profile-pic {
+  margin-top: -65px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: end;
+}
+.swiper-slide .client .profile-pic img {
+  margin-right: auto;
+}
+
+/* client-section */
+
 /* Home-Page */
