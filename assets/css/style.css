@@ -231,30 +231,15 @@
 }
 
 @media (max-width: 500px) {
-  .sp-services .swiper-slide .item {
+  .sp-services.item {
     height: 340px;
   }
-  .sp-services .swiper-slide .item > .main-img {
+  .sp-services .item > .main-img {
     height: 260px;
   }
 }
 
 /* Special-services-section */
-/* Booking-section */
-section.booking {
-  border-top: 2px solid #343a32;
-}
-
-form select {
-  padding: 12px 65px;
-  outline: none;
-  padding-right: 12px;
-  border: 1px solid #ced4da;
-  border-radius: 12px;
-
-  color: #212529;
-}
-/* Booking-section */
 
 /* client-section */
 
@@ -385,58 +370,6 @@ form select {
 }
 
 /* Offers-section */
-/* subscribe-section */
-section.subecribe {
-  position: relative;
-  background-color: var(--secondry-color);
-  padding-block: 6%;
-  text-align: center;
-}
-
-section.subecribe .wrapper {
-  position: relative;
-  z-index: 2;
-}
-
-section.subecribe .stars {
-  position: absolute;
-  z-index: 1;
-  left: 20%;
-  top: 10%;
-}
-section.subecribe .input-wrapper {
-  box-shadow: 0px 6px 1px 0px #424d3d;
-}
-section.subecribe .input-wrapper input {
-  border: 1px solid black;
-  border-top-left-radius: 6px;
-}
-section.subecribe .input-wrapper button {
-  border: none;
-  background: #424d3d;
-  border-top-right-radius: 6px;
-}
-@media (max-width: 1080px) {
-  section.subecribe .stars {
-    display: none !important;
-  }
-}
-
-/* subscribe-section */
-
-.main-links,
-.copy-right {
-  background-color: var(--secondry-color);
-}
-
-/* main-links-section */
-@media (max-width: 500px) {
-  .main-links ul {
-    font-size: 14px !important;
-  }
-}
-
-/* main-links-section */
 
 /* Home-Page */
 
@@ -470,3 +403,73 @@ section.subecribe .input-wrapper button {
 /* static-services-section */
 
 /* services-Page */
+
+/* aboutUS-Page */
+.offers.our-work .item {
+  flex: 1;
+}
+/* aboutUS-Page */
+/* contactUs-Page */
+
+.details .wrapper {
+  color: #343a32;
+}
+.details .bg {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 0;
+  top: 15%;
+  background-color: var(--secondry-color);
+  z-index: -1;
+  border-bottom: 3px solid #343a32;
+}
+
+@media (max-width: 950px) {
+  .details .bg {
+    height: 100%;
+    top: 0;
+    border-bottom: 0;
+  }
+}
+
+/* contactUs-Page */
+
+/* machines-Page */
+.machine-benifits .wrapper ul {
+  padding-inline: 5%;
+}
+.machine-benifits .wrapper ul li {
+  font-family: Garamond;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #343a32;
+}
+.machine-benifits .wrapper ul li span {
+  font-family: Garamond;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--main-color);
+}
+.machine-benifits .wrapper ul li::marker {
+  color: var(--main-color) !important;
+}
+.machine-benifits .wrapper p {
+  text-align: center;
+  margin-top: 25px;
+  font-family: Garamond;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  color: #936e4e;
+}
+
+@media (max-width: 500px) {
+  .machine-benifits .wrapper ul {
+    padding-inline: 0;
+  }
+}
+
+/* machines-Page */

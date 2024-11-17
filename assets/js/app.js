@@ -7,5 +7,4 @@ function loadFixedPart(url, target) {
 window.addEventListener("load", function () {
   loadFixedPart("navbar.html", "navbar-container");
   loadFixedPart("footer.html", "footer-container");
-  loadFixedPart("subscribe.html", "subscribe-container");
 });

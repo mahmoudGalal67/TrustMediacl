@@ -215,6 +215,7 @@ nav > .container .logo-container {
   border: 1px solid black;
   aspect-ratio: 1/1;
   object-fit: cover;
+  background-color: var(--secondry-color);
 }
 .details .wrapper .images img.sm {
   position: absolute;
@@ -255,7 +256,7 @@ nav > .container .logo-container {
   font-family: Garamond;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 27px;
 }
 
 .details .wrapper .text li span {
@@ -285,6 +286,22 @@ nav > .container .logo-container {
 
 /* Swiper */
 
+/* Booking-section */
+section.booking {
+  border-top: 2px solid #343a32;
+}
+
+form select {
+  padding: 12px 65px;
+  outline: none;
+  padding-right: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 12px;
+
+  color: #212529;
+}
+/* Booking-section */
+
 .swiper-pagination-bullet {
   border: 1px solid #343a32 !important;
   background: white !important;
@@ -292,3 +309,56 @@ nav > .container .logo-container {
 .swiper-pagination-bullet-active {
   background-color: #343a32 !important;
 }
+
+/* subscribe-section */
+section.subecribe {
+  position: relative;
+  background-color: var(--secondry-color);
+  padding-block: 6%;
+  text-align: center;
+}
+
+section.subecribe .wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+section.subecribe .stars {
+  position: absolute;
+  z-index: 1;
+  left: 20%;
+  top: 10%;
+}
+section.subecribe .input-wrapper {
+  box-shadow: 0px 6px 1px 0px #424d3d;
+}
+section.subecribe .input-wrapper input {
+  border: 1px solid black;
+  border-top-left-radius: 6px;
+}
+section.subecribe .input-wrapper button {
+  border: none;
+  background: #424d3d;
+  border-top-right-radius: 6px;
+}
+@media (max-width: 1080px) {
+  section.subecribe .stars {
+    display: none !important;
+  }
+}
+
+/* subscribe-section */
+
+.main-links,
+.copy-right {
+  background-color: var(--secondry-color);
+}
+
+/* main-links-section */
+@media (max-width: 500px) {
+  .main-links ul {
+    font-size: 14px !important;
+  }
+}
+
+/* main-links-section */
